@@ -49,4 +49,34 @@ const myFunc = function(){
     console.log('hello world')
 }
 
-console.log(typeof myFunc)
+console.log(Symbol)
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap(Non-Primitive)
+// In Stack (Primitive)- when we declare any primitive types of data like
+// Variable we get only copy of that
+
+//Heap (Non-Primitive) - when memory assign to heap or non-primitive we get that form refernce of original value suppose we change something it get reflected on og value as well.
+
+
+let myOriginalName = 'Nitesh'
+
+let anotherName = myOriginalName
+anotherName = 'NewName'
+
+console.log(myOriginalName)
+console.log(anotherName)
+
+let userOne = {
+    email:'nitesh@gmail.com',
+    upi:'user@ybl'
+}
+
+let userTwo = userOne
+
+userTwo.email = 'nitesh@google.com'
+
+console.log(userOne.email)
+console.log(userTwo.email)
