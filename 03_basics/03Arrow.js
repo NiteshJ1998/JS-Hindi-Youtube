@@ -34,3 +34,5 @@ chai()
 // const addTwwo = (num1, num2) =>{  ///Explict retrun
 //     return num1+ num2
 // }
+
+const addTwo = (num1, num2) => ({username:'nitesh'})
