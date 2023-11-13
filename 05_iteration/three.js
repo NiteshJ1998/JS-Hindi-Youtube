@@ -19,7 +19,7 @@ const greetings = "Nitesh Jaiswar"
 
 for (const greet of greetings) {
     if (greet != ' ') {
-        console.log(greet)
+        // console.log(greet)
         
     }
     // console.log(`Each char is ${greet}`)
@@ -37,4 +37,27 @@ for (const greet of greetings) {
 
 // MAPS
 
-const map = new map()
+
+const map = new Map()
+map.set('IN', 'india')
+map.set('US', 'USA')
+map.set('IT', 'ITALY')
+map.set('NZ', 'NEZ')
+
+// console.log(map)
+
+for (const [key, value] of map) {
+    // console.log(key,value)
+}
+
+const myObject = {
+    game1: 'NFS',
+    game2: 'Spiderman',
+    game3: 'GTA',
+    game4: 'valorant'
+}
+
+for (const [key, value] of myObject) {
+    console.log(key , value)
+    
+}
